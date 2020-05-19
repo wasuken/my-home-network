@@ -1,0 +1,13 @@
+nwdiag {
+  inet [shape = cloud, color = "lightpink"];
+  inet -- inazuma;
+  network internal {
+      address = "192.168.10.0/24";
+
+      inazuma [address = ".254"];
+      hibiki [address = ".150"];
+      ikazuchi [address = ".151"];
+      akatsuki [address = ".152"];
+      ushio [address = ".153"];
+  }
+}
